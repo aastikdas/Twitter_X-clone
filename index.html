@@ -13,12 +13,13 @@
   <div class="flex container mx-auto ">
 
 
-    <div class="first w-10 lg:w-[50%] my-4 mx-5 ">
-      <div class="logo">
-        <img src="twitter icon.png" alt="" srcset="" class="w-12 m-auto">
-      </div>
+    <div class="first w-10 lg:w-[50%] mb-4 mx-5 ">
+      
       <!-- huge icons and google font icons -->
-      <div class="sidebar flex flex-col lg:items-end ">
+      <div class="sidebar flex flex-col lg:items-end sticky top-0">
+        <div class="logo m-auto">
+          <img src="twitter icon.png" alt="" srcset="" class="w-12 m-auto">
+        </div>
         <ul class="felx flex-col items-end font-semibold ">
           <li
             class="flex justify-start items-center lg:gap-4  lg:w-fit p-2 hover:cursor-pointer hover:bg-slate-800 hover:rounded-full hover:duration-300 ">
@@ -160,6 +161,9 @@
             <li>
               <div class=" w-full post text-center">
                 <button class=" hidden lg:block px-16 py-2 text-lg bg-blue-600 text-white rounded-full cursor-pointer ">Post</button>
+                <button class=" lg:hidden justify-start items-center gap-4  w-fit p-2 hover:cursor-pointer hover:bg-blue-700 rounded-full hover:duration-300 bg-blue-600">
+                  <img src="svg/pencil.svg" alt="" srcset="">
+                </button>
               </div>
             </li>
           </ul>          
@@ -167,7 +171,7 @@
     </div>
 
 
-    <div class="second w-[90%]  border-[1px] border-x-white border-y-black">
+    <div class="second w-[90%]  border-[1px] border-x-gray-700">
       <div class="top flex py-2 relative">
         <div class="dash-line absolute w-16 h-[4px] rounded-full bg-blue-400 bottom-[5%] left-[16%]"></div>
         <div class="left w-1/2  text-center hover:cursor-pointer hover:underline hover:decoration-blue-500">For You
@@ -216,7 +220,7 @@
               Legend
             </div>
             <div class="posting">
-              <img class="h-[290px] w-[90%] m-2  rounded-xl" src="images/post_meme_1.jpeg" alt="" srcset="">
+              <img class=" m-2  rounded-xl" src="images/post_meme_1.jpeg" alt="" srcset="">
             </div>
             <div class="icons w-[90%] mx-2 ">
               <ul class="flex justify-between">
@@ -340,8 +344,8 @@
     </div>
 
 
-    <div class="third hidden m-2 lg:w-[50%] lg:block lg:mx-20">
-      <div class="search m-2 flex items-center md:w-[85%]">
+    <div class="third hidden m-2 w-full   md:block ">
+      <div class=" sticky top-[2vh] search flex items-center md:w-[85%]">
         <svg class="m-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#f7f1f1"
           fill="none">
           <path d="M14 14L16.5 16.5" stroke="currentColor" stroke-width="0.5" stroke-linejoin="round" />
@@ -355,7 +359,7 @@
         <input type="text" name="" id="" placeholder="Search"
           class="w-full rounded-full bg-slate-700 px-4 py-2 font-semibold">
       </div>
-      <div class="whats m-3  bg-slate-700  rounded-2xl p-3 w-[85%]">
+      <div class=" sticky top-[10vh] whats m-3  bg-slate-700  rounded-2xl p-3 w-[85%]">
         <h1 class="text-2xl font-bold">What's Happening</h1>
         <div class="item px-2 py-1 rounded-xl hover:bg-slate-600 hover:cursor-pointer border-b-2">
           <div class=" mx-3 text-sm text-gray-400 flex justify-between">
@@ -382,7 +386,7 @@
           <div class="mx-3 text-sm text-gray-400">132k posts</div>
         </div>
       </div>
-      <div class="whom m-3  bg-slate-700  rounded-2xl p-3 w-[85%]">
+      <div class=" sticky top-[55vh] whom m-3  bg-slate-700  rounded-2xl p-3 w-[85%]">
         <h1 class="text-2xl font-bold">Whom to follow</h1>
         <div class="hover:cursor-pointer card flex items-center justify-between hover:bg-slate-600 hover:rounded">
           <img class="w-16 h-16 p-2" src="images/maldieves.jpeg" alt="">
