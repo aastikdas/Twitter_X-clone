@@ -5,9 +5,7 @@ yarn.lock
 pnpm-lock.yaml  
 
 # Build files  
-.next/  
-out/  
-dist/  
+.next/ 
 .vscode/  
 .DS_Store  
 
